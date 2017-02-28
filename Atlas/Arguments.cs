@@ -76,7 +76,7 @@ namespace Atlas
             {
                 if (!_args.ContainsKey(ACCOUNT_TYPE_KEY))
                 {
-                    return ServiceAccount.LocalSystem;
+                    return ServiceAccount.NetworkService;
                 }
 
                 if (_account == ServiceAccount.LocalSystem)
@@ -94,7 +94,7 @@ namespace Atlas
             {
                 if (!_args.ContainsKey(STARTMODE_KEY))
                 {
-                    return ServiceStartMode.Manual;
+                    return ServiceStartMode.Automatic;
                 }
                 if (_startMode == ServiceStartMode.Manual)
                 {
