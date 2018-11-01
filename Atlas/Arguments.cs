@@ -138,7 +138,7 @@ namespace Atlas
                     return ServiceStartMode.Automatic;
                 case "manual":
                 default:
-                    return ServiceStartMode.Manual;
+                    return ServiceStartMode.Automatic;
             }
         }
 
